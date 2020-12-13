@@ -1,9 +1,14 @@
 [package]
-name = "NimatronRust"
+name = "nimatron_rust"
 version = "0.1.0"
 authors = ["Sarvarian <Sarvarian@Hotmail.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
+gdnative = "0.9.1"
+bevy = "0.3.0"
